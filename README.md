@@ -2,26 +2,18 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
 
-## Development server
+## REQUERIMIENTOS
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Angular 8
+- npm
 
-## Code scaffolding
+## Corriendo servidor
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Primero ejecutar el comando npm install para instalar todas las dependencias del proyecto, luego en la terminal correr el comando `ng serve` para correr el proyecto, luego en el navegador ir a `http://localhost:4200/` 
 
-## Build
+## API
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+para que este proyecto funcione debe estar online el servidor del proyecto back end / API, a continuación la url con el proyecto y las instrucciones de uso
 
-## Running unit tests
+API: https://github.com/hposaday/oneItemStoreBack
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
