@@ -1,0 +1,39 @@
+<app-toolbar></app-toolbar>
+<mat-card>
+    <mat-grid-list cols="1" rowHeight="30px">
+        <mat-grid-tile>
+           <h2>DETALLES DE LA ORDEN</h2>
+          </mat-grid-tile>
+        
+        <mat-grid-tile>
+          <span >Codigo:</span>
+          <span>{{order_code}}</span>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <span>Nombre: </span>
+          <span>{{name}} </span>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <span>Telefono: </span>
+            <span> {{phone}}</span>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <span>Email: </span>
+            <span> {{mail}}</span>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <span>Estado: </span>
+            <span>{{status}} </span>
+          </mat-grid-tile>
+          <mat-grid-tile *ngIf="valuesLoaded">
+            <button *ngIf="status !== 'PAYED' && status !==  'REJECTED' && status !==  'APPROVED'" color="primary" mat-raised-button (click)="payOrder()">
+               PAGAR
+            </button>
+           <p *ngIf="status === 'PAYED' || status === 'APPROVED'" style="border: 1px solid blue">Esta orden ya fue pagada</p>
+           <button *ngIf="status === 'REJECTED'; else payedMessage" color="primary" mat-raised-button (click)="payOrder()">
+              CREAR NUEVA ORDEN
+           </button>
+        </mat-grid-tile>
+      </mat-grid-list> 
+     
+</mat-card>

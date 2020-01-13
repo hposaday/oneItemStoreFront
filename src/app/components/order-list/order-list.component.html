@@ -1,0 +1,33 @@
+<app-toolbar></app-toolbar>
+<div class="content " layout-align="start"  flex>
+    <mat-card *ngFor="let order of orders">
+            <mat-grid-list cols="1" rowHeight="30px">
+                <mat-grid-tile>
+                  <span >Codigo:</span>
+                  <span>{{order.order_code}}</span>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                  <span>Nombre: </span>
+                  <span>{{order.customer_name}} </span>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <span>Telefono: </span>
+                    <span> {{order.customer_mobile}}</span>
+                  </mat-grid-tile>
+                  <mat-grid-tile>
+                    <span>Email: </span>
+                    <span> {{order.customer_email}}</span>
+                  </mat-grid-tile>
+                  <mat-grid-tile>
+                    <span>Estado: </span>
+                    <span>{{order.status}} </span>
+                  </mat-grid-tile>
+              </mat-grid-list> 
+    </mat-card>
+
+<mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile>
+        
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

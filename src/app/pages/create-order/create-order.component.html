@@ -1,0 +1,27 @@
+<app-toolbar></app-toolbar>
+<mat-card>
+    <form [formGroup]="createOrderForm" (onSubmit)="createOrder()" >
+        <mat-grid-list cols="1" rowHeight="30px">
+            <mat-grid-tile>
+                <mat-form-field>
+                    <input formControlName="name" matInput placeholder="Nombre">
+                  </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-form-field>
+                    <input formControlName="email" matInput placeholder="Email" >
+                  </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-form-field>
+                    <input formControlName="phone" matInput placeholder="Teléfono" >
+                  </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <button color="primary" mat-raised-button (click)="createOrder()">
+                   Crear
+                </button>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </form>
+</mat-card>
